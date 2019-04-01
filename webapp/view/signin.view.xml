@@ -1,0 +1,49 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" controllerName="signupzcreate.controller.signin" displayBlock="true" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core"  xmlns:mvc="sap.ui.core.mvc">
+	<App id="app1">
+		<pages>
+			<Page title="Sign In to Capgemini Go">
+				<content>
+				    <VBox alignItems="Center" direction="Column" fitContainer="false" width="100%" height="100%" justifyContent="Start" renderType="Div" visible="true" displayInline="false">
+                <items>
+                    <Image src="img/logo-square.png" height="200px" width="200px" densityAware="false"/>
+                    <form:Form width="100%" editable="true" visible="true">
+                        <form:title>
+                            <core:Title text="Login" level="Auto"/>
+                        </form:title>
+                        <form:formContainers>
+                            <form:FormContainer visible="true">
+                                <form:formElements>
+                                    <form:FormElement visible="true">
+                                        <form:label>
+                                            <Label text="Used Id" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                        </form:label>
+                                        <form:fields>
+                                            <Input type="Text" id="userId" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0" />
+                                        </form:fields>
+                                    </form:FormElement>
+                                    <form:FormElement visible="true">
+                                        <form:label>
+                                            <Label text="Password" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                        </form:label>
+                                        <form:fields>
+                                            <Input type="Password" id="password" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0" />
+                                            <Button text="Login" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="createUser"/>
+                                            <Link text="New User ? Register" textAlign="Begin" width="auto" target="_blank" wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false" press="signup"/>
+                                        </form:fields>
+                                    </form:FormElement>
+                                </form:formElements>
+                                <form:title/>
+                            </form:FormContainer>
+                        </form:formContainers>
+                        <form:layout>
+                            <form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+                        </form:layout>
+                    </form:Form>
+                </items>
+                <layoutData/>
+            </VBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

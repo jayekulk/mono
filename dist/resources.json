@@ -1,0 +1,93 @@
+{
+    "resources": [
+        {
+            "name": "i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "model/models.js"
+        },
+        {
+            "name": "model/Data.json"
+        },
+        {
+            "name": "img/imageFashion3.jpg"
+        },
+        {
+            "name": "img/58088993_02.jpg"
+        },
+        {
+            "name": "img/imageFashion.png"
+        },
+        {
+            "name": "img/imageFasshion2.jpg"
+        },
+        {
+            "name": "img/sb48-um-demo.png"
+        },
+        {
+            "name": "img/logo-square.png"
+        },
+        {
+            "name": "index.html"
+        },
+        {
+            "name": "manifest.json"
+        },
+        {
+            "name": "view/signup.view.xml"
+        },
+        {
+            "name": "view/mainpage.view.xml"
+        },
+        {
+            "name": "view/details.view.xml"
+        },
+        {
+            "name": "view/barcode.view.xml"
+        },
+        {
+            "name": "view/View1.view.xml"
+        },
+        {
+            "name": "view/signin.view.xml"
+        },
+        {
+            "name": "view/checkout.view.xml"
+        },
+        {
+            "name": "css/style.css"
+        },
+        {
+            "name": "Component.js"
+        },
+        {
+            "name": "controller/signin.controller.js"
+        },
+        {
+            "name": "controller/View1.controller.js"
+        },
+        {
+            "name": "controller/barcode.controller.js"
+        },
+        {
+            "name": "controller/mainpage.controller.js"
+        },
+        {
+            "name": "controller/details.controller.js"
+        },
+        {
+            "name": "controller/signup.controller.js"
+        },
+        {
+            "name": "controller/checkout.controller.js"
+        },
+        {
+            "name": "Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "neo-app.json"
+        }
+    ]
+}

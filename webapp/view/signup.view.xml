@@ -1,0 +1,30 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="signupzcreate.controller.signup" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="Signup">
+				<content>
+				    <sap.ui.layout:VerticalLayout xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="__layout0"/>
+				    <sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" editable="true" layout="ResponsiveGridLayout" id="__form0">
+				        <sap.ui.layout.form:content>
+				            <sap.ui.core:Title text="Welcome to Store. Please Signup!" id="__title0"/>
+				            <Label text="UserName"/>
+				            <Input width="100%" id="user"/>
+				            <Label text="Password"/>
+				            <Input width="100%" id="pass"/>
+				            <Label text="Address"/>
+				            <Input width="100%" id="address"/>
+				            <Label text="Age"/>
+				            <Input width="100%" id="age"/>
+				            <Label text="Mobile"/>
+				            <Input width="100%" id="mobile"/>
+				            <Label text="Email"/>
+				            <Input width="100%" id="email"/>
+				            <Label/>
+				            <Button text="Sign up" width="100px" id="__button0" press="createUser"/>
+			            </sap.ui.layout.form:content>
+				    </sap.ui.layout.form:SimpleForm>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,34 @@
+{
+    "application": {
+        "id": "",
+        "title": "signupzcreate.CodeJamFinal",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#CodeJamFinal-Display",
+        "navigationComponentName": "signupzcreate",
+        "intentSemanticObject": "CodeJamFinal",
+        "intentAction": "Display",
+        "html5ApplicationName": "codejamfinal",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "New_group"
+        ],
+        "contentPackages": [
+            "00000000-0000-2222-0000-00000000"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "Title",
+        "subtitle": "Subtitle",
+        "searchKeywords": "Title,Subtitle",
+        "displayIconUrl": "sap-icon://approvals",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}

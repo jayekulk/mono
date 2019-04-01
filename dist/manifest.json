@@ -1,0 +1,182 @@
+{
+    "_version": "1.7.0",
+    "sap.app": {
+        "id": "signupzcreate",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "sourceTemplate": {
+            "id": "ui5template.basicSAPUI5ApplicationProject",
+            "version": "1.40.12"
+        },
+        "dataSources": {
+            "Z_MIMOSAFASHIONSTORE_SRV": {
+                "uri": "http://cgawssap66.cgawssapuk.com:8010/sap/opu/odata/sap/Z_MIMOSAFASHIONSTORE_SRV",
+                "type": "OData",
+                "settings": {
+                    "odataVersion": "2.0"
+                }
+            }
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        },
+        "supportedThemes": [
+            "sap_hcb",
+            "sap_belize"
+        ]
+    },
+    "sap.ui5": {
+        "rootView": {
+            "viewName": "signupzcreate.view.signin",
+            "type": "XML"
+        },
+        "dependencies": {
+            "minUI5Version": "1.30.0",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {},
+                "sap.ui.layout": {},
+                "sap.ushell": {},
+                "sap.collaboration": {},
+                "sap.ui.comp": {},
+                "sap.uxap": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "signupzcreate.i18n.i18n"
+                }
+            },
+            "defaultModel": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "Default",
+                    "defaultCountMode": "None"
+                },
+                "dataSource": "Z_MIMOSAFASHIONSTORE_SRV",
+                "preload": true
+            },
+            "dataModel": {
+                "type": "sap.ui.model.json.JSONModel",
+                "settings": {},
+                "preload": false
+            }
+        },
+        "resources": {
+            "css": [
+                {
+                    "uri": "css/style.css"
+                }
+            ]
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "viewPath": "signupzcreate.view",
+                "controlId": "app1",
+                "controlAggregation": "pages"
+            },
+            "routes": [
+                {
+                    "pattern": "",
+                    "name": "signin",
+                    "target": "signin"
+                },
+                {
+                    "pattern": "signup",
+                    "name": "signup",
+                    "target": "signup"
+                },
+                {
+                    "pattern": "details",
+                    "name": "details",
+                    "target": "details"
+                },
+                {
+                    "pattern": "barcode",
+                    "name": "barcode",
+                    "target": "barcode"
+                },
+                {
+                    "pattern": "view1",
+                    "name": "View1",
+                    "target": "View1"
+                },
+                {
+                    "name": "checkout",
+                    "pattern": "checkout",
+                    "titleTarget": "",
+                    "greedy": false,
+                    "target": [
+                        "checkout"
+                    ]
+                },
+                {
+                    "name": "route name",
+                    "pattern": "",
+                    "titleTarget": "",
+                    "greedy": false
+                }
+            ],
+            "targets": {
+                "signin": {
+                    "viewName": "signin",
+                    "viewLevel": 1
+                },
+                "signup": {
+                    "viewName": "signup",
+                    "viewLevel": 2
+                },
+                "details": {
+                    "viewName": "details",
+                    "viewLevel": 2
+                },
+                "barcode": {
+                    "viewName": "barcode",
+                    "viewLevel": 2
+                },
+                "View1": {
+                    "viewName": "View1",
+                    "viewLevel": 2
+                },
+                "checkout": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearAggregation": true,
+                    "viewName": "checkout",
+                    "viewId": "checkout"
+                }
+            }
+        }
+    },
+    "sap.platform.hcp": {
+        "uri": "",
+        "_version": "1.1.0"
+    }
+}

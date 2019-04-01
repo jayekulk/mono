@@ -1,0 +1,34 @@
+{
+	"regionProperties" :
+		[
+		    { "code": "EU", "legend": "Europe",         "color": "rgba(184,225,245,1.0)", "tooltip":"Europe\r\n\r\nPopulation: 743 Mio" },
+		    { "code": "NA", "legend": "North America",  "color": "rgba(5,71,102,1.0)"  },
+		    { "code": "AS", "legend": "Asia",        "color": "rgba(92,186,229,1.0)"  }
+		],
+ 	    
+	"Spots" :
+		[
+			{
+                "pos": "72.9914;19.1431602;5",
+                "tooltip": "Near Dmart Sector 8 Airoli",
+                "type": "Success",
+                "text": "Store1",
+                "zoomLevel" : "10"
+            },
+            {
+                "pos": "88.3821989;22.5402602;2",
+                "tooltip": "Near Kolkata Railway Station",
+                "type": "Success",
+                "text": "Store2",
+                 "zoomLevel" : "10"
+            },
+            {
+                "pos": "77.5945627;12.9715987;2",
+                "tooltip": "Near Gigaplex",
+                "type": "Success",
+                "text": "Store3",
+                 "zoomLevel" : "10"
+            }
+           
+		]
+}

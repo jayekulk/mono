@@ -1,0 +1,30 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" controllerName="signupzcreate.controller.checkout" displayBlock="true" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core"  xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.ui.layout.form">
+	<App >
+		<pages>
+			<Page title="Your Cart">
+				<content>
+				 <List id="notificationList" class="sapContrast sapContrastPlus" items="{/results}">
+				<NotificationListItem
+						title="{title}"
+						description="{Category}"
+						showCloseButton="true"
+						datetime="1 hour"
+						unread="true"
+						priority="None"
+						close="onItemClose"
+						press="onListItemPress"
+						authorName="{Price}"
+						authorPicture="test-resources/sap/m/images/Woman_04.png">
+					</NotificationListItem>
+					</List>
+				</content>
+				<footer>
+					<Toolbar visible="true">
+						<ToolbarSpacer/>
+						<Button text="Proceed to Check Out" type="Emphasized" id="submit" press="handleAcceptPressed"/>
+					</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

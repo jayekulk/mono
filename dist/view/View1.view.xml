@@ -1,0 +1,58 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="signupzcreate.controller.View1">
+                  	
+ 
+			
+<App id="__app0">
+      
+			
+    <pages>
+      
+			
+        <Page title="Welcome User" id="__page0">
+        	<HBox alignItems="Stretch" direction="Row" fitContainer="false" width="100%" height="auto" justifyContent="Start" renderType="Div" visible="true" displayInline="false">
+                        <items>
+                            <SearchField placeholder="Search" showSearchButton="false" visible="true" width="100%"/>
+                            <Button text="" type="Accept" icon="sap-icon://bar-code" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="onScan"/>
+                            <Button text="" type="Default" icon="sap-icon://search" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                        </items>
+                        <layoutData/>
+                    </HBox>
+                    <Carousel height="30%" width="100%" loop="true" showPageIndicator="true" pageIndicatorPlacement="Bottom" visible="true" class="sapUiContentPadding">
+                        <pages>
+                            <Image src="img/imageFashion.png" height="100%" width="100%" densityAware="false"/>
+                            <Image src="img/imageFashion3.jpg" height="auto" width="50px" densityAware="false"/>
+                            <Image src="img/imageFasshion2.jpg" height="auto" width="50px" densityAware="false"/>
+                        </pages>
+                    </Carousel>
+                  <!--   <HBox>
+				<Image src="img/imageFashion.png" densityAware="false" width="33%">
+					<layoutData>
+						<FlexItemData growFactor="1"/>
+					</layoutData>
+				</Image>
+				<Image src="img/imageFashion.png" densityAware="false" width="33%">
+					<layoutData>
+						<FlexItemData growFactor="1"/>
+					</layoutData>
+				</Image>
+				<Image src="img/imageFashion.png" densityAware="false" width="33%" decorative="false" press="handleImage3Press">
+					<layoutData>
+						<FlexItemData growFactor="1"/>
+					</layoutData>
+				</Image>
+			</HBox>-->
+
+	<headerContent>
+
+	    <Button id="__button2" icon="sap-icon://cart" type="Emphasized" press="onAddtoCart"/>
+
+	</headerContent>
+
+	</Page>
+        </pages>
+      
+			
+</App>
+      
+			
+</mvc:View>
